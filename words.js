@@ -1,8 +1,9 @@
 window.onload = function(argument) {
 	String.fromCodePoint(128512)
 
-
-	var moby = String.fromCodePoint(128151);
+	
+	
+	var moby = [String.fromCodePoint(128151), String.fromCodePoint(128155), String.fromCodePoint(128150), String.fromCodePoint(128156), String.fromCodePoint(128158), String.fromCodePoint(128159)];
 	//var moby = "anger a fear sadness disgust enjoyment happiness love relief contentment amusement joy pride excitement peace satisfaction lonely heartbroken gloomy disappointed hopeless grieved unhappy lost troubled resigned miserable worried doubtful nervous anxious terrified panicked horrified desperate confused stressed annoyed frustrated peeved contrary bitter infuriated irritated mad cheated vengeful insulted dislike revulsion loathing disapproving offended horrified uncomfortable nauseated disturbed withdrawn aversion";
 	var words = {};
 	var words_attr = [];
@@ -74,7 +75,8 @@ window.onload = function(argument) {
 
 	function string_handle(str) {
     var lamda = 1;
-		var word_array = str.split(" ");
+		//var word_array = str.split(" ");
+		var word_array = str; 
     // Give each word a random occurance counrt
 		for (var i = 0; i < word_array.length; i++) {
       var u = Math.random();
